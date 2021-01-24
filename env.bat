@@ -5,12 +5,11 @@ SET OLDPATH=%PATH%
 DOSKEY add-env=notepad "%HOMEDRIVE%\%HOMEPATH%\Scripts\env.bat"
 
 :: Alias commands
-DOSKEY git-repo=sh git-repo $*
-DOSKEY vim=bash -c "vim $*"
 DOSKEY git=%HOMEDRIVE%\%HOMEPATH%\Scripts\git_command.bat $*
 DOSKEY cd=%HOMEDRIVE%\%HOMEPATH%\Scripts\change_dir $*
-DOSKEY npm-exec=%HOMEDRIVE%\%HOMEPATH%\Scripts\npm-exec
-DOSKEY msys2=Z:\msys64\usr\bin\bash.exe
+DOSKEY msys2=%HOMEDRIVE%\msys64\usr\bin\bash.exe
+DOSKEY clear=cls
+DOSKEY cpp_run=%HOMEDRIVE%\%HOMEPATH%\Scripts\cpp_run.bat $1 $2
 
 :: Home
 DOSKEY ~=%HOMEDRIVE%\%HOMEPATH%\Scripts\change_dir %HOMEDRIVE%\%HOMEPATH%\
