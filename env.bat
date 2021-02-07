@@ -8,7 +8,7 @@ DOSKEY add-env=notepad "%HOMEDRIVE%\%HOMEPATH%\Scripts\env.bat"
 DOSKEY git=%HOMEDRIVE%\%HOMEPATH%\Scripts\git_command.bat $*
 DOSKEY cd=%HOMEDRIVE%\%HOMEPATH%\Scripts\change_dir $*
 DOSKEY cpp_run=%HOMEDRIVE%\%HOMEPATH%\Scripts\cpp_run.bat $1 $2
-DOSKEY open=start
+DOSKEY open=explorer
 
 :: Home
 DOSKEY ~=%HOMEDRIVE%\%HOMEPATH%\Scripts\change_dir %HOMEDRIVE%\%HOMEPATH%\
