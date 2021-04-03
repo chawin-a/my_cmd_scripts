@@ -1,2 +1,4 @@
 # [ Prerequirement ]
-install bash on windows
+git, head, gcc
+# [ Optional ]
+miniconda
