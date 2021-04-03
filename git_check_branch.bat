@@ -1,11 +1,11 @@
 @echo off
 set GITBRANCH=
-git rev-parse --abbrev-ref HEAD 1> %HOMEDRIVE%\%HOMEPATH%\Scripts\tmp 2> nul
-set /p GITBRANCH=<%HOMEDRIVE%\%HOMEPATH%\Scripts\tmp
+git rev-parse --abbrev-ref HEAD 1> %HOMEDRIVE%\%HOMEPATH%\Scripts\temp\tmp 2> nul
+set /p GITBRANCH=<%HOMEDRIVE%\%HOMEPATH%\Scripts\temp\tmp
 
 set GITUNTRACK=
-git status -s 2> nul | head -n 1 1> %HOMEDRIVE%\%HOMEPATH%\Scripts\tmp
-set /p GITUNTRACK=<%HOMEDRIVE%\%HOMEPATH%\Scripts\tmp
+git status -s 2> nul | head -n 1 1> %HOMEDRIVE%\%HOMEPATH%\Scripts\temp\tmp
+set /p GITUNTRACK=<%HOMEDRIVE%\%HOMEPATH%\Scripts\temp\tmp
 
 if not "%GITUNTRACK%" == "" (
 	set GITBRANCH=%GITBRANCH% *
