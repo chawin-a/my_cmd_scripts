@@ -12,6 +12,7 @@ DOSKEY cpp_run_d=%HOMEDRIVE%\%HOMEPATH%\Scripts\cpp_run_d.bat $1 $2
 DOSKEY stress=%HOMEDRIVE%\%HOMEPATH%\Scripts\stress_test_script.cmd $1 $2 $3
 DOSKEY exit=exit 0
 DOSKEY clear=cls
+DOSKEY g++=g++ -std=c++17 $*
 
 :: Home
 DOSKEY ~=%HOMEDRIVE%\%HOMEPATH%\Scripts\change_dir %HOMEDRIVE%\%HOMEPATH%\
